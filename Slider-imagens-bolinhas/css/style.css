@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(136deg, rgb(255, 159, 152) 0%, rgb(255, 42, 42) 100%);
+}
+
+.wrapper{
+    position: relative;
+    height: 400px;
+    width:700px;
+}
+
+.wrapper .img{
+    position:absolute;
+    height: 100%;
+    width:100%;
+}
+
+.wrapper .img img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+}
+#um:checked ~ .img-1 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#dois:checked ~ .img-1 img,
+#dois:checked ~ .img-2 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#tres:checked ~ .img-1 img,
+#tres:checked ~ .img-2 img,
+#tres:checked ~ .img-3 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#quatro:checked ~ .img-1 img,
+#quatro:checked ~ .img-2 img,
+#quatro:checked ~ .img-3 img,
+#quatro:checked ~ .img-4 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#cinco:checked ~ .img-1 img,
+#cinco:checked ~ .img-2 img,
+#cinco:checked ~ .img-3 img,
+#cinco:checked ~ .img-4 img,
+#cinco:checked ~ .img-5 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#um:checked ~.sliders label.um{
+    width: 35px;
+    border-radius: 14px;
+    background: white;
+}
+#dois:checked ~.sliders label.dois{
+    width: 35px;
+    border-radius: 14px;
+    background: white;
+}
+#tres:checked ~.sliders label.tres{
+    width: 35px;
+    border-radius: 14px;
+    background: white;
+}
+#quatro:checked ~.sliders label.quatro{
+    width: 35px;
+    border-radius: 14px;
+    background: white;
+}
+#cinco:checked ~.sliders label.cinco{
+    width: 35px;
+    border-radius: 14px;
+    background: white;
+}
+.wrapper .sliders{
+    position:absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:999;
+    display: flex;
+}
+.wrapper .sliders label{
+    height: 13px;
+    width: 13px;
+    border:2px solid rgb(255, 255, 255);
+    margin: 0 3px;
+    cursor:pointer;
+    border-radius: 50%;
+    transition:all 0.3s ease;
+}
+.wrapper input[type="radio"]{
+    display: none;
+}
+.sliders label:hover {
+    background: rgb(255, 255, 255);
+}
