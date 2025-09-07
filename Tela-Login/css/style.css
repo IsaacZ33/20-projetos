@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    background: #626cd6;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    width: 100%;
+    max-width: 435px;
+    background-color: white;
+    border-radius:  6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.15);
+}
+.login-form h3{
+    font-size: 20px;
+    text-align: center;
+}
+.login-form .login-option{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-form .login-option .option{
+    width: calc(100% / 2 - 12px);
+}
+.login-form .login-option .option a{
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #f8f8fb;
+    border: 1px solid #dadaf2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.login-form .login-option .option a:hover{
+    background-color: #ededf5;
+    border-color: #626cd6;
+}
+.login-form .login-option .option a img{
+    max-width: 25px;
+}
+.login-form p{
+    text-align: center;
+
+}
+.login-form .separator{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.login-form .separator span{
+    background-color: white;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+
+form .input-box label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+form .input-box input{
+    width: 100%;
+    height: 57px;
+    border: 1px solid #dadaf2;
+    border-radius: 5px;
+    outline: none;
+    background: #f8f8f8;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+form .input-box input:focus{
+    border-color:  #626cd6;
+}
+form .input-box .titulo-senha{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+form .input-box{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #626cd6;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+form button:hover{
+    background: #4954d0;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo{
+    color: white;
+    font-weight: 600;
+    font-size:  2.1rem;
+    text-decoration: none;
+}
+
+.navbar .logo span{
+    color: #c06b3e;
+}
+
+.navbar .menu-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.navbar a:hover{
+    color: #c06b3e;
+}
+
+.hero-section{
+    height: 100vh;
+    background-image: url("Cafe-Background.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section .content{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+}
+
+.hero-section .content h2{
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 70px;
+}
+
+
+.hero-section .content p{
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.hero-section .content button{
+    background: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+.hero-section .content button:hover{
+    color: white;
+    background-color: #c06b3e;
+}
+
+#close-menu-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburguer-btn{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
